@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%\pdfminorversion=4
+	% NOTE: To produce blinded version, replace "0" with "1" below.
+	\newcommand{\blind}{0}
+	
+	%%%%%%% IISE Transactions margin specifications %%%%%%%%%%%%%%%%%%%
+	% DON'T change margins - should be 1 inch all around.
+	\addtolength{\oddsidemargin}{-.5in}%
+	\addtolength{\evensidemargin}{-.5in}%
+	\addtolength{\textwidth}{1in}%
+	\addtolength{\textheight}{1.3in}%
+	\addtolength{\topmargin}{-.8in}%
+    \makeatletter
+    \renewcommand\section{\@startsection {section}{1}{\z@}%
+                                       {-3.5ex \@plus -1ex \@minus -.2ex}%
+                                       {2.3ex \@plus.2ex}%
+                                       {\normalfont\fontfamily{phv}\fontsize{16}{19}\bfseries}}
+    \renewcommand\subsection{\@startsection{subsection}{2}{\z@}%
+                                         {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                         {1.5ex \@plus .2ex}%
+                                         {\normalfont\fontfamily{phv}\fontsize{14}{17}\bfseries}}
+    \renewcommand\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                        {-3.25ex\@plus -1ex \@minus -.2ex}%
+                                         {1.5ex \@plus .2ex}%
+                                         {\normalfont\normalsize\fontfamily{phv}\fontsize{14}{17}\selectfont}}
+    \makeatother
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%% IISE Transactions package list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\usepackage{amsmath}
+	\usepackage{graphicx}
+	\usepackage{enumerate}
+	\usepackage{xcolor}
+	\usepackage{natbib} %comment out if you do not have the package
+	\usepackage{url} % not crucial - just used below for the URL
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	%%%%% Author package list and commands %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%% Here are some examples %%%%%%%%%%%%%%
+	%	\usepackage{amsfonts, amsthm, latexsym, amssymb}
+	%	\usepackage{lineno}
+	%	\newcommand{\mb}{\mathbf}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+	\begin{document}
+		
+			%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\def\spacingset#1{\renewcommand{\baselinestretch}%
+			{#1}\small\normalsize} \spacingset{1}
+		%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		
+		\if0\blind
+		{
+			\title{Using Scientific Software engineering to implement the transcendental function $ab^{x}$.}
+			\author{
+				\\             
+				Herve Ngomseu Fotsing (40067741)\\
+				\\
+				\\
+				\emph{SEON 6011 -- Software Engineering Processes}\\
+					\\
+					Project Report\\}
+			\centering{}
+			\date{August $05^{th}$, 2022}
+			
+			\maketitle
+			
+		} \fi
+		
+		
+		\bigskip
+		
+	
+			
+	\noindent%
+	{\it Keywords:} \emph{agile methodologies and DevOps; software engineering; versioning and testing; transcendental function.}
+
+	%\newpage
+	\spacingset{1.5} % DON'T change the spacing!
+
+\pagebreak
+\section{Introduction} \label{s:intro}
+A paper starts off with the section introducing the research problem and explaining the background and motivation.
+
+\section{Section heading 2} \label{s:sec2}
+The review of literature can be a separate section but it can be merged with the introduction section. One can find a number of reference examples at the end of this template, like,
+
+\section{Section heading 3} \label{s:methods}
+First-level headings should be in bold.
+
+\subsection{
+\emph{Subsection heading 3.1}} \label{s:methods.1}
+Second-level headings should be in bold italics.
+
+\subsubsection{\emph{Sub-subsection heading 3.1.1}} \label{s:methods.1.1}
+
+Third-level headings should be in italics.
+	
+\subsection{\emph{Subsection heading 3.2}} \label{s:methods.2}
+
+
+\subsection{\emph{Subsection heading 3.3}} \label{s:methods.3}
+	
+\section{Section heading 4} \label{s:numerical}
+Perhaps numerical analysis of performance, comparison, and demonstration of applicability and impact using real data.
+
+\section{Conclusion}\label{s:conclusion}
+A paper ends with a conclusion or summary section.
+
+\if0\blind{
+\section*{Acknowledgements}
+The authors acknowledge the generous support from the funding agency of XYZ.	} \fi
+
+\bibliographystyle{abbrv}
+\spacingset{1}
+\bibliography{IISE-Trans}
+	
+\end{document}
