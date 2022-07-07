@@ -1,7 +1,3 @@
-/**
- * 
- */
-package seon6011;
 
 /**
  * @author Herve
