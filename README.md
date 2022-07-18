@@ -1,9 +1,6 @@
-# Face mask detection using CNN
+# Using Scientific Software engineering to implement the transcendental function $y=ab^{x}$.
 
-This work aims to demonstrate an end–to–end pipeline 
-implementation of a Convolutional Neural Network (CNN–based) Face Mask detector to
-classify five categories of face masks, namely:
-* A person without a face mask.
+Software engineering best practices such as agile methodologies and DevOps are increasingly incorporated in the development and implementations of software in organisations. In scientific software engineering, for instance, scientific calculators have to support functionalities including evaluating transcendental functions. In this document we present an implementation of the function $ab^x$. 
 
 
 ## Getting Started
