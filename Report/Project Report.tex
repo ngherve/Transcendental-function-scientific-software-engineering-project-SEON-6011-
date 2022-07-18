@@ -30,6 +30,7 @@
 	
 	%%%%% IISE Transactions package list %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	\usepackage{amsmath}
+	\usepackage{amsfonts}
 	\usepackage{graphicx}
 	\usepackage{enumerate}
 	\usepackage{float}
@@ -154,22 +155,25 @@ The main function takes as input valid double data types for the three parameter
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/ContextDiagram}
-	\caption{Context of use model for $y=ab^x$}
+	\caption{Context of use model for the program $y=ab^x$.}
 	\label{fig3}
 \end{figure}
 
 \section{Requirement Extraction} \label{s:sec2}
 In order to obtain a artefact through the software development process, it is necessary to formulate requirement of the system. These artefacts are usually the by-product produced during the development process (DevOps) include relevant designs diagrams and models use as described in the document. We shall consider four main activities in the requirement extraction process as follows.
-\subsection{Requirement elicitation}
-At this stage we communicated intensively with stakeholders. In this case this was done by reading project description, clarifying requirements with the lecturer and discussing the assignment with teaching assistant and other fellow student to have more insights on the problem. The various approaches to the implementation of subordinate function were investigated and constraint were defined. The context diagram was developed and the necessary literature was conducted for various implementation. The users include human users and APIs. Mathematical concepts and implications were considered and there was revision of boundaries and constraints of the function $y=ab^x$. A draft of the UI design was discussed too with stakeholders At this stage there is a clear understanding of the problem.
+\subsection{Requirements elicitation}
+At this stage we communicated intensively with stakeholders. In this case this was done by reading project description, clarifying requirements with the lecturer and discussing the assignment with teaching assistant and other fellow student to have more insights on the problem. The various approaches to the implementation of subordinate function were investigated and constraint were defined. The context diagram was developed and the necessary literature was conducted for various implementation. The users include human users and APIs. Mathematical concepts and implications were considered and there was revision of boundaries and constraints of the function $y=ab^x$. A draft of the UI design was discussed too with stakeholders. At this stage there is a clear understanding of the problem.
 \subsection{Requirements specification}
 Here we elaborate requirements formally based on the previous stage of the process. All requirements including functional and non-functional requirements, and constraints are specifies here. As studied in agile methodologies, these activities are carried out incrementally and iteratively as we develop the program by revising requirements. Git and GitHub was used as the version control system throughout the development process. 
 \subsubsection{Functional requirements}
 \begin{itemize}
 	\item The program must be implemented in Java and the document written in Latex.
 	\item The mathematical expressions in must be typeset in Latex and not as images.
-	\item The artifacts must be placed in a distributed version control system
-	\item 
+	\item The artifacts must be placed in a distributed version control system.
+	\item The algorithms must handle every boundary conditions of the domain and codomain of the function. 
+	\item The main function ($y=ab^x$) and its subordinate functions ($e^x$, $a^x$, $\ln x$, $\lvert x \rvert$) must be implemented from scratch.
+	\item Unit tests (JUnits) must be created to test each corresponding subordinate functions. This is done to test that our solution corresponds to or at least nearly equates to the actual value.
+	\item A variable parameter $\epsilon$ may be provided by the user to control the allowable error in the calculations. A default value is used if $\epsilon$ is not provided.
 \end{itemize}
 \subsubsection{Non-functional requirements}
 \begin{itemize}
@@ -179,13 +183,18 @@ Here we elaborate requirements formally based on the previous stage of the proce
 	\item The algorithms for subordinate functions must be designed to attain high performance in terms of both space and time complexities.
 \end{itemize}
 \subsection{Requirements verification and validation}
+Verification is conducted to ensure the software implements the specific function. This is done by testing the implementation against a range of values and comparing them with the actual answers of default calculations.\par
+Validations is carried out to ensure that the software matches various constraints and is traceable to customer requirements. This also help to avoid propagation of errors to successive stages. Unit test were developed for various constraint to satisfy the requirements of the function.
 \subsection{Requirements management}
+At this stage, we analyse, document, track, prioritise and agree on requirement while controlling communication with stakeholders. This is done through flash reviews organised by the lecturer to monitor progress thus far and make changes or validate requirements. We also produce relevant documentations and review on the implementation of the software.
 
 \section{Source code review and description of test cases} \label{s:sec3}
-First-level headings should be in bold.
+The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function\par
+The program is implemented using Eclipse IDE for developers (version 2021-09). The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0)
 
-\begin{algorithm}
-	\caption{An algorithm with caption}\label{alg:cap}
+\subsection{Pseudocode and description of Algorithms}
+\begin{algorithm}[H]
+	\caption{Algorithm for power($x$, $n$)}\label{alg:pow}
 	\begin{algorithmic}
 		\Require $n \geq 0$
 		\Ensure $y = x^n$
@@ -195,7 +204,7 @@ First-level headings should be in bold.
 		\While{$N \neq 0$}
 		\If{$N$ is even}
 		\State $X \gets X \times X$
-		\State $N \gets \frac{N}{2}$  \Comment{This is a comment}
+		\State $N \gets \frac{N}{2}$  \Comment{setting $N$ to its half}
 		\ElsIf{$N$ is odd}
 		\State $y \gets y \times X$
 		\State $N \gets N - 1$
@@ -204,6 +213,60 @@ First-level headings should be in bold.
 	\end{algorithmic}
 \end{algorithm}
 
+\begin{algorithm}[H]
+	\caption{Algorithm for $\ln x$}\label{alg:ln}
+	\begin{algorithmic}
+		\Require $x > 0$, $nterms$
+		\Ensure $y = \ln x$
+		\State $result \gets 0.0$
+		\While{$x > 2$}
+			\State $result \gets result + \ln 2$
+			\State $x \gets x/2$
+		\EndWhile
+		\State $x \gets x -1$
+		\State $factor \gets 1$
+		\State $res \gets 0.0$
+		\For{$i \gets 1$ to $nterms$}
+		\State $res \gets res + factor * power(x, i)/i$ \Comment{External call to Algorithm \ref{alg:pow}}
+		\State $factor \gets factor - factor$
+		\EndFor
+		\State $result\gets result + res$
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\caption{Algorithm for $e^x$}\label{alg:ex}
+	\begin{algorithmic}
+		\Require $x \in \mathbb{R}$, $nterms$ (Number of terms)
+		\Ensure $y = e^x$
+		\State $temp \gets 1$
+		\State $result \gets 1.0$
+		\For{$i \gets 1$ to $nterms$}\Comment{Taylor's Series Expansion of $\ln x$}
+		\State $temp \gets temp * i$
+		\State $result \gets results + power(x, i) / temp$
+		\EndFor
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\caption{Algorithm for $\lvert x \rvert$}\label{alg:abs}
+	\begin{algorithmic}
+		\Require $x \in \mathbb{R}$
+		\Ensure $y = \lvert x \rvert$
+		\If{$x$ is negative}
+		\State $x \gets -x$
+		\EndIf
+	\end{algorithmic}
+\end{algorithm}
+
+\begin{algorithm}[H]
+	\caption{Algorithm for $ab^x$}\label{alg:abx}
+	\begin{algorithmic}
+		\Require $x \in \mathbb{R}$, $a$, $x$
+		\Ensure $y=ab^x$
+		\State $result \gets a *power(b,x)$ \Comment{External call to Algorithm \ref{alg:pow}}	
+	\end{algorithmic}
+\end{algorithm}
 
 \section{Conclusion}\label{s:conclusion}
 In conclusion, we described, implemented and documented the scientific calculation of the function $y=ab^x$ using software engineering best practices. The program was built conceptually and tested in Java programming language, we designed a also designed a context of use that fits with the implementation.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  16 JUL 2022 14:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  17 JUL 2022 17:54
 entering extended mode
 **"./Project Report.tex"
 (Project Report.tex
@@ -78,6 +78,14 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
+)
+(C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
 (C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
@@ -745,24 +753,24 @@ File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 ) (Project Report.aux)
 \openout1 = `"Project Report.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 (C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -789,7 +797,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 52.
+Package hyperref Info: Link coloring OFF on input line 53.
 
 (C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -803,9 +811,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 52.
-LaTeX Info: Redefining \pageref on input line 52.
-LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 53.
+LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \nameref on input line 53.
  (Project Report.out) (Project Report.out)
 \@outlinefile=\write4
 \openout4 = `"Project Report.out"'.
@@ -815,19 +823,31 @@ LaTeX Info: Redefining \nameref on input line 52.
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.18} into 
 your preamble.
- on input line 52.
+ on input line 53.
 
-<Figures/univ_logo.png, id=55, 602.25pt x 200.75pt>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
+
+(C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
+
+
+(C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<Figures/univ_logo.png, id=59, 602.25pt x 200.75pt>
 File: Figures/univ_logo.png Graphic file (type png)
 <use Figures/univ_logo.png>
-Package pdftex.def Info: Figures/univ_logo.png  used on input line 82.
+Package pdftex.def Info: Figures/univ_logo.png  used on input line 83.
 (pdftex.def)             Requested size: 227.62204pt x 75.87532pt.
+
 [1
 
 {C:/Users/gomse/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Figures/univ_
 logo.png>]
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 9
-9.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 1
+00.
 
 (C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
@@ -838,37 +858,37 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 
  [2]
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <14> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 106.
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 107.
  [3]
-<Figures/graph.png, id=105, 715.92468pt x 224.33812pt>
+<Figures/graph.png, id=110, 715.92468pt x 224.33812pt>
 File: Figures/graph.png Graphic file (type png)
 <use Figures/graph.png>
-Package pdftex.def Info: Figures/graph.png  used on input line 146.
+Package pdftex.def Info: Figures/graph.png  used on input line 147.
 (pdftex.def)             Requested size: 432.26999pt x 135.45625pt.
-<Figures/ContextDiagram.png, id=107, 651.8754pt x 397.9668pt>
+<Figures/ContextDiagram.png, id=112, 651.8754pt x 397.9668pt>
 File: Figures/ContextDiagram.png Graphic file (type png)
 <use Figures/ContextDiagram.png>
-Package pdftex.def Info: Figures/ContextDiagram.png  used on input line 156.
+Package pdftex.def Info: Figures/ContextDiagram.png  used on input line 157.
 (pdftex.def)             Requested size: 432.26999pt x 263.90982pt.
- [4 <./Figures/graph.png>] [5 <./Figures/ContextDiagram.png>]
+ [4 <./Figures/graph.png>] [5 <./Figures/ContextDiagram.png>] [6] [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 182.
- [6] (Project Report.bbl
+put line 197.
+ [8] [9] (Project Report.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [7] (Project Report.aux)
+) [10] (Project Report.aux)
 Package rerunfilecheck Info: File `"Project Report".out' has not changed.
-(rerunfilecheck)             Checksum: 58E2CC78B0628DE18C32AD33644929FB;2222.
+(rerunfilecheck)             Checksum: 22D457262BE3151546209EB323A49F07;2497.
  ) 
 Here is how much of TeX's memory you used:
- 30342 strings out of 478927
- 719459 string characters out of 2852536
- 1135791 words of memory out of 3000000
- 47688 multiletter control sequences out of 15000+600000
- 417552 words of font info for 60 fonts, out of 8000000 for 9000
+ 30465 strings out of 478927
+ 721278 string characters out of 2852536
+ 1136228 words of memory out of 3000000
+ 47789 multiletter control sequences out of 15000+600000
+ 420011 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,12n,97p,839b,2028s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,12n,97p,840b,2028s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <C
 :\Users\gomse\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.
 pk><C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
@@ -885,12 +905,13 @@ C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmti10.pfb><C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmti12.pfb><C:/Users/gomse/AppData/Local/Programs/MiKTeX/fonts/t
-ype1/urw/helvetic/uhvb8a.pfb><C:/Users/gomse/AppData/Local/Programs/MiKTeX/font
-s/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/gomse/AppData/Local/Programs/MiKTeX/
-fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on "Project Report.pdf" (7 pages, 309186 bytes).
+ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gomse/AppData/Local/Programs/
+MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gomse/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/gomse/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on "Project Report.pdf" (10 pages, 325616 bytes).
 PDF statistics:
- 206 PDF objects out of 1000 (max. 8388607)
- 26 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 34 named destinations out of 1000 (max. 500000)
+ 132 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -2,11 +2,12 @@
 \contentsline {subsection}{\numberline {1.1}\emph {Description of the function}}{3}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}Context of use model}{4}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Requirement Extraction}{5}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Requirement elicitation}{5}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.1}Requirements elicitation}{5}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Requirements specification}{6}{subsection.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.1}Functional requirements}{6}{subsubsection.2.2.1}%
-\contentsline {subsubsection}{\numberline {2.2.2}Non-functional requirements}{6}{subsubsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.3}Requirements verification and validation}{6}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Requirements management}{6}{subsection.2.4}%
-\contentsline {section}{\numberline {3}Source code review and description of test cases}{6}{section.3}%
-\contentsline {section}{\numberline {4}Conclusion}{7}{section.4}%
+\contentsline {subsubsection}{\numberline {2.2.2}Non-functional requirements}{7}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Requirements verification and validation}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Requirements management}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Source code review and description of test cases}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Pseudocode and description of Algorithms}{8}{subsection.3.1}%
+\contentsline {section}{\numberline {4}Conclusion}{10}{section.4}%

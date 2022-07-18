@@ -4,8 +4,7 @@ package seon6011.main;
  * @author Herve
  *
  */
-public class main {
-	
+public class main {	
 	
 	/**
 	 * @param args Commnd line arguments
@@ -49,7 +48,7 @@ public class main {
 	
 	 /** The Constant EXPANSION. */
 	 public static final int EXPANSION = 60; // default Taylor expansion times
-
+	 
 	 /** The Constant LN2. */
 	 public static final double LN2 = 0.6931471805599453; // value of ln(2)
 	 
@@ -120,7 +119,6 @@ public class main {
 		 return result;
 	 }
 	
-	 
 	 /**
 	  * Calculate the value of ln(value).
 	  *
@@ -158,5 +156,5 @@ public class main {
 		 }
 		 return result;
 	 }
-	
+	 
 }
