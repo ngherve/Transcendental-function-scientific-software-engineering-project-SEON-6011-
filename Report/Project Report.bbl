@@ -1,3 +1,37 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{eclipse}
+eclipse.
+\newblock {Eclipse documentation}.
+\newblock https://help.eclipse.org/latest/index.jsp, 2022.
+\newblock Accessed: July 18, 2022.
+
+\bibitem{google2}
+Google.
+\newblock {Google Software engineering best practices}.
+\newblock https://google.github.io/eng-practices/, 2022.
+\newblock Accessed: July 18, 2022.
+
+\bibitem{google1}
+Google.
+\newblock {How to do a code review, Google}.
+\newblock https://google.github.io/eng-practices/review/reviewer/, 2022.
+\newblock Accessed: July 18, 2022.
+
+\bibitem{contextofuse}
+P.~Johnston.
+\newblock {Software System Context Model}, 2022.
+\newblock Accessed: July 18, 2022.
+
+\bibitem{li2015automated}
+Y.~Li, E.~Guzman, K.~Tsiamoura, F.~Schneider, and B.~Bruegge.
+\newblock Automated requirements extraction for scientific software.
+\newblock {\em Procedia Computer Science}, 51:582--591, 2015.
+
+\bibitem{ravid2000method}
+A.~Ravid and D.~M. Berry.
+\newblock A method for extracting and stating software requirements that a user
+  interface prototype contains.
+\newblock {\em Requirements Engineering}, 5(4):225--241, 2000.
 
 \end{thebibliography}

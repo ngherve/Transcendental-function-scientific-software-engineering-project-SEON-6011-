@@ -151,7 +151,7 @@ The range of $y$ varies depending on various parameter as follows.
 
 \subsection{Context of use model}
 The calculator application as described by the function can accommodate two types of user namely. Scientists (human users) and external programs through Application Program Interface (API) calls on subordinate functions.\par
-The main function takes as input valid double data types for the three parameters $a$, $b$ and $x$. These values are entered by the user through the user interface and validated by the program and then passed into the main method. This method in turn calls subordinate functions to obtain the relevant results. The calculator then return the final results of calculation to the user interface. This could be a value or simply a message indicating a calculation error. This process is illustrated in figure \ref{fig3} below.
+The main function takes as input valid double data types for the three parameters $a$, $b$ and $x$. These values are entered by the user through the user interface and validated by the program and then passed into the main method. This method in turn calls subordinate functions to obtain the relevant results. The calculator then return the final results of calculation to the user interface. This could be a value or simply a message indicating a calculation error. This process is illustrated in figure \ref{fig3} below \cite{contextofuse}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/ContextDiagram}
@@ -160,11 +160,11 @@ The main function takes as input valid double data types for the three parameter
 \end{figure}
 
 \section{Requirement Extraction} \label{s:sec2}
-In order to obtain a artefact through the software development process, it is necessary to formulate requirement of the system. These artefacts are usually the by-product produced during the development process (DevOps) include relevant designs diagrams and models use as described in the document. We shall consider four main activities in the requirement extraction process as follows.
+In order to obtain a artefact through the software development process, it is necessary to formulate requirement of the system. These artefacts are usually the by-product produced during the development process (DevOps) include relevant designs diagrams and models use as described in the document \cite{ravid2000method}. We shall consider four main activities in the requirement extraction process as follows.
 \subsection{Requirements elicitation}
 At this stage we communicated intensively with stakeholders. In this case this was done by reading project description, clarifying requirements with the lecturer and discussing the assignment with teaching assistant and other fellow student to have more insights on the problem. The various approaches to the implementation of subordinate function were investigated and constraint were defined. The context diagram was developed and the necessary literature was conducted for various implementation. The users include human users and APIs. Mathematical concepts and implications were considered and there was revision of boundaries and constraints of the function $y=ab^x$. A draft of the UI design was discussed too with stakeholders. At this stage there is a clear understanding of the problem.
 \subsection{Requirements specification}
-Here we elaborate requirements formally based on the previous stage of the process. All requirements including functional and non-functional requirements, and constraints are specifies here. As studied in agile methodologies, these activities are carried out incrementally and iteratively as we develop the program by revising requirements. Git and GitHub was used as the version control system throughout the development process. 
+Here we elaborate requirements formally based on the previous stage of the process. All requirements including functional and non-functional requirements, and constraints are specifies here \cite{li2015automated}. As studied in agile methodologies, these activities are carried out incrementally and iteratively as we develop the program by revising requirements. Git and GitHub was used as the version control system throughout the development process. 
 \subsubsection{Functional requirements}
 \begin{itemize}
 	\item The program must be implemented in Java and the document written in Latex.
@@ -189,7 +189,7 @@ Validations is carried out to ensure that the software matches various constrain
 At this stage, we analyse, document, track, prioritise and agree on requirement while controlling communication with stakeholders. This is done through flash reviews organised by the lecturer to monitor progress thus far and make changes or validate requirements. We also produce relevant documentations and review on the implementation of the software.
 
 \section{Source code review and description of test cases} \label{s:sec3}
-The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function\par
+The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature \cite{google2}. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function \cite{google1}.\par
 
 \subsection{Pseudocode and description of Algorithms}
 \begin{algorithm}[H]
@@ -268,7 +268,7 @@ The source code of the program conforms to google coding style and the variable 
 \end{algorithm}
 
 \subsection{Test cases and tool used}
-The program is implemented using Eclipse IDE for developers (version 2021-09). The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0). Java Developer Tools (JDT) such as JUnit (JUnit 5 for Eclipse Oxygen was used) to build test cases. The coverage was computed with JaCoCo library, a plug-in in Eclipse.
+The program is implemented using Eclipse IDE for developers (version 2021-09) \cite{eclipse}. The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0). Java Developer Tools (JDT) such as JUnit (JUnit 5 for Eclipse Oxygen was used) to build test cases. The coverage was computed with JaCoCo library, a plug-in in Eclipse.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/test}
@@ -301,6 +301,6 @@ In conclusion, we described, implemented and documented the scientific calculati
 
 \bibliographystyle{abbrv}
 \spacingset{1}
-\bibliography{IISE-Trans}
+\bibliography{References}
 	
 \end{document}
