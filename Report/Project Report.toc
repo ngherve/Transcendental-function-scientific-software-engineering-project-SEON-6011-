@@ -10,4 +10,7 @@
 \contentsline {subsection}{\numberline {2.4}Requirements management}{7}{subsection.2.4}%
 \contentsline {section}{\numberline {3}Source code review and description of test cases}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pseudocode and description of Algorithms}{8}{subsection.3.1}%
-\contentsline {section}{\numberline {4}Conclusion}{10}{section.4}%
+\contentsline {subsection}{\numberline {3.2}Test cases and tool used}{10}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Advantages of Eclipse}{11}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Disadvantages of Eclipse}{11}{subsubsection.3.2.2}%
+\contentsline {section}{\numberline {4}Conclusion}{12}{section.4}%

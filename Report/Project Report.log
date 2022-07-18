@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  17 JUL 2022 17:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  18 JUL 2022 12:59
 entering extended mode
 **"./Project Report.tex"
 (Project Report.tex
@@ -836,7 +836,7 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 (C:\Users\gomse\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<Figures/univ_logo.png, id=59, 602.25pt x 200.75pt>
+<Figures/univ_logo.png, id=71, 602.25pt x 200.75pt>
 File: Figures/univ_logo.png Graphic file (type png)
 <use Figures/univ_logo.png>
 Package pdftex.def Info: Figures/univ_logo.png  used on input line 83.
@@ -860,32 +860,44 @@ File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <14> not available
 (Font)              Font shape `OT1/phv/b/sl' tried instead on input line 107.
  [3]
-<Figures/graph.png, id=110, 715.92468pt x 224.33812pt>
+<Figures/graph.png, id=125, 715.92468pt x 224.33812pt>
 File: Figures/graph.png Graphic file (type png)
 <use Figures/graph.png>
 Package pdftex.def Info: Figures/graph.png  used on input line 147.
 (pdftex.def)             Requested size: 432.26999pt x 135.45625pt.
-<Figures/ContextDiagram.png, id=112, 651.8754pt x 397.9668pt>
+<Figures/ContextDiagram.png, id=127, 651.8754pt x 397.9668pt>
 File: Figures/ContextDiagram.png Graphic file (type png)
 <use Figures/ContextDiagram.png>
 Package pdftex.def Info: Figures/ContextDiagram.png  used on input line 157.
 (pdftex.def)             Requested size: 432.26999pt x 263.90982pt.
  [4 <./Figures/graph.png>] [5 <./Figures/ContextDiagram.png>] [6] [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 197.
- [8] [9] (Project Report.bbl
+put line 196.
+ [8] [9]
+<Figures/test.png, id=163, 1444.64719pt x 809.27344pt>
+File: Figures/test.png Graphic file (type png)
+<use Figures/test.png>
+Package pdftex.def Info: Figures/test.png  used on input line 274.
+(pdftex.def)             Requested size: 432.26999pt x 242.15413pt.
+ [10 <./Figures/test.png>]
+<Figures/gui.png, id=172, 368.1253pt x 373.395pt>
+File: Figures/gui.png Graphic file (type png)
+<use Figures/gui.png>
+Package pdftex.def Info: Figures/gui.png  used on input line 293.
+(pdftex.def)             Requested size: 302.58766pt x 306.94365pt.
+ [11] (Project Report.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
-) [10] (Project Report.aux)
+) [12 <./Figures/gui.png>] (Project Report.aux)
 Package rerunfilecheck Info: File `"Project Report".out' has not changed.
-(rerunfilecheck)             Checksum: 22D457262BE3151546209EB323A49F07;2497.
+(rerunfilecheck)             Checksum: 9FDD13D9CDD853A266DD88C98F3E3ADD;3060.
  ) 
 Here is how much of TeX's memory you used:
- 30465 strings out of 478927
- 721278 string characters out of 2852536
+ 30499 strings out of 478927
+ 721849 string characters out of 2852536
  1136228 words of memory out of 3000000
- 47789 multiletter control sequences out of 15000+600000
+ 47814 multiletter control sequences out of 15000+600000
  420011 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,97p,840b,2028s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -909,9 +921,9 @@ ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gomse/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gomse/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/gomse/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on "Project Report.pdf" (10 pages, 325616 bytes).
+Output written on "Project Report.pdf" (12 pages, 470385 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 34 named destinations out of 1000 (max. 500000)
- 132 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 267 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

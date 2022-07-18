@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../../../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../../../jacoco-resources/report.gif" type="image/gif"/><title>GUI.java</title><link rel="stylesheet" href="../../../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../../../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../../../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../../../index.html" class="el_report">test (Jul. 18, 2022 11:43:50 a.m.)</a> &gt; <a href="../../index.html" class="el_group">seon6011</a> &gt; <a href="../index.html" class="el_bundle">src</a> &gt; <a href="index.source.html" class="el_package">seon6011.gui</a> &gt; <span class="el_source">GUI.java</span></div><h1>GUI.java</h1><pre class="source lang-java linenums">/**
+ * 
+ */
+package seon6011.gui;
+
+import javax.swing.BorderFactory;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+/**
+ * @author Herve
+ *
+ */
+public class GUI implements ActionListener {
+	
+<span class="nc" id="L24">	private JButton buttonEps = new JButton(&quot;Set number of Taylor series expansions&quot;);</span>
+<span class="nc" id="L25">	private JButton buttonA = new JButton(&quot;Set Value a&quot;);</span>
+<span class="nc" id="L26">	private JButton buttonB = new JButton(&quot;Set Value b&quot;);</span>
+<span class="nc" id="L27">	private JButton buttonX = new JButton(&quot;Set Value x&quot;);</span>
+<span class="nc" id="L28">	private JButton buttonCalc = new JButton(&quot;Calculate&quot;);</span>
+<span class="nc" id="L29">	private JButton buttonReset = new JButton(&quot;Reset&quot;);</span>
+<span class="nc" id="L30">	private JButton buttonEpsilon = new JButton(&quot;Set Value of Eps&quot;);</span>
+<span class="nc" id="L31">	private JLabel label = new JLabel(&quot;Welcome to the calculator app for y=ab^x. Please enter values below&quot;);</span>
+<span class="nc" id="L32">	private JTextArea txtFieldRes = new JTextArea(&quot;Resullt&quot;);</span>
+<span class="nc" id="L33">	private	JFrame frame = new JFrame();</span>
+<span class="nc" id="L34">	private double valueA = 0.0;</span>
+<span class="nc" id="L35">	private double valueB = 0.0;</span>
+<span class="nc" id="L36">	private double valueX = 0.0;</span>
+	
+<span class="nc" id="L38">	public GUI() {</span>
+		
+<span class="nc" id="L40">		JPanel panel = new JPanel();</span>
+		
+<span class="nc" id="L42">		txtFieldRes.setEditable(false);</span>
+		//txtFieldRes.setSize(200, 200);
+<span class="nc" id="L44">		txtFieldRes.setText(&quot;Result\nValue of a = &quot; + valueA + &quot;\nValue of b = &quot; + valueB + &quot;\nValue of x = &quot; + valueX + </span>
+<span class="nc" id="L45">				&quot;\nNumber of Expansions = &quot; + seon6011.main.main.EXPANSION + &quot;\nValue of Epsilon = &quot;</span>
+<span class="nc" id="L46">				+ seon6011.main.main.EPSILON);</span>
+		
+<span class="nc" id="L48">		buttonEps.addActionListener(this);</span>
+<span class="nc" id="L49">		buttonEpsilon.addActionListener(this);</span>
+<span class="nc" id="L50">		buttonA.addActionListener(this);</span>
+<span class="nc" id="L51">		buttonB.addActionListener(this);</span>
+<span class="nc" id="L52">		buttonReset.addActionListener(this);</span>
+<span class="nc" id="L53">		buttonX.addActionListener(this);</span>
+<span class="nc" id="L54">		buttonCalc.addActionListener(this);</span>
+		
+<span class="nc" id="L56">		panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));</span>
+<span class="nc" id="L57">		panel.setLayout(new GridLayout(0,1));</span>
+<span class="nc" id="L58">		panel.add(label);</span>
+<span class="nc" id="L59">		panel.add(buttonEps);</span>
+<span class="nc" id="L60">		panel.add(buttonEpsilon);</span>
+<span class="nc" id="L61">		panel.add(buttonA);</span>
+<span class="nc" id="L62">		panel.add(buttonB);</span>
+<span class="nc" id="L63">		panel.add(buttonX);</span>
+<span class="nc" id="L64">		panel.add(buttonCalc);</span>
+
+<span class="nc" id="L66">		panel.add(buttonReset);</span>
+		
+<span class="nc" id="L68">		frame.setLayout(new GridLayout(0,1));</span>
+<span class="nc" id="L69">		frame.add(panel, BorderLayout.NORTH);</span>
+<span class="nc" id="L70">		frame.add(txtFieldRes, BorderLayout.SOUTH);</span>
+
+<span class="nc" id="L72">		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L73">		frame.setTitle(&quot;Calculator App&quot;);</span>
+<span class="nc" id="L74">		frame.pack();</span>
+<span class="nc" id="L75">		frame.setSize(500, 500);</span>
+<span class="nc" id="L76">		frame.setVisible(true);</span>
+		
+<span class="nc" id="L78">	}</span>
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+<span class="nc bnc" id="L82" title="All 2 branches missed.">		if(e.getSource()==buttonEpsilon) {</span>
+			try {
+<span class="nc" id="L84">				Object result = JOptionPane.showInputDialog(frame, &quot;Enter the value of Eps&quot;);</span>
+<span class="nc" id="L85">				seon6011.main.main.EPSILON = Double.parseDouble(result.toString());</span>
+			
+<span class="nc" id="L87">			} catch (Exception e2) {</span>
+<span class="nc" id="L88">				JOptionPane.showMessageDialog(null, &quot;Please enter a real value&quot;, &quot;Error Message&quot;, JOptionPane.ERROR_MESSAGE);</span>
+			}
+		}
+<span class="nc bnc" id="L91" title="All 2 branches missed.">		if(e.getSource()==buttonEps) {</span>
+			try {
+<span class="nc" id="L93">				Object result = JOptionPane.showInputDialog(frame, &quot;Enter the value of Eps&quot;);</span>
+<span class="nc" id="L94">				seon6011.main.main.EXPANSION = Integer.parseInt(result.toString());</span>
+
+<span class="nc" id="L96">			} catch (Exception e2) {</span>
+<span class="nc" id="L97">				JOptionPane.showMessageDialog(null, &quot;Please enter a real value&quot;, &quot;Error Message&quot;, JOptionPane.ERROR_MESSAGE);</span>
+			}
+		}
+<span class="nc bnc" id="L100" title="All 2 branches missed.">		if(e.getSource()==buttonA) {</span>
+			
+			try {
+<span class="nc" id="L103">				Object result = JOptionPane.showInputDialog(frame, &quot;Enter the value of a&quot;);</span>
+<span class="nc" id="L104">				valueA = Double.parseDouble(result.toString());</span>
+<span class="nc" id="L105">			} catch (Exception e2) {</span>
+<span class="nc" id="L106">				JOptionPane.showMessageDialog(null, &quot;Please enter a real value&quot;, &quot;Error Message&quot;, JOptionPane.ERROR_MESSAGE);</span>
+			}
+			
+		}
+<span class="nc bnc" id="L110" title="All 2 branches missed.">		if(e.getSource()==buttonB) {</span>
+			try {
+<span class="nc" id="L112">				Object result = JOptionPane.showInputDialog(frame, &quot;Enter the value of b&quot;);</span>
+<span class="nc" id="L113">				valueB = Double.parseDouble(result.toString());</span>
+<span class="nc" id="L114">			} catch (Exception e2) {</span>
+<span class="nc" id="L115">				JOptionPane.showMessageDialog(null, &quot;Please enter a real value&quot;, &quot;Error Message&quot;, JOptionPane.ERROR_MESSAGE);</span>
+			}
+		}
+		
+<span class="nc bnc" id="L119" title="All 2 branches missed.">		if(e.getSource()==buttonX) {</span>
+			try {
+<span class="nc" id="L121">				Object result = JOptionPane.showInputDialog(frame, &quot;Enter the value of x&quot;);</span>
+<span class="nc" id="L122">				valueX = Double.parseDouble(result.toString());</span>
+<span class="nc" id="L123">			} catch (Exception e2) {</span>
+<span class="nc" id="L124">				JOptionPane.showMessageDialog(null, &quot;Please enter a real value&quot;, &quot;Error Message&quot;, JOptionPane.ERROR_MESSAGE);</span>
+			}		
+		}
+		
+<span class="nc bnc" id="L128" title="All 2 branches missed.">		if(e.getSource()==buttonReset) {</span>
+<span class="nc" id="L129">			valueA = 0.0;</span>
+<span class="nc" id="L130">			valueB = 0.0;</span>
+<span class="nc" id="L131">			valueX = 0.0;</span>
+<span class="nc" id="L132">			seon6011.main.main.EXPANSION = 60;</span>
+<span class="nc" id="L133">			seon6011.main.main.EPSILON = 0.0000001;</span>
+		}
+<span class="nc" id="L135">		txtFieldRes.setText(&quot;Result\nValue of a = &quot; + valueA + &quot;\nValue of b = &quot; + valueB + &quot;\nValue of x = &quot; + valueX + </span>
+<span class="nc" id="L136">								&quot;\nNumber of Expansions = &quot; + seon6011.main.main.EXPANSION + &quot;\nValue of Epsilon = &quot;</span>
+<span class="nc" id="L137">								+ seon6011.main.main.EPSILON);</span>
+<span class="nc bnc" id="L138" title="All 2 branches missed.">		if(e.getSource()==buttonCalc) {</span>
+<span class="nc" id="L139">			double ans = 0.0;</span>
+			try {
+<span class="nc" id="L141">				ans = seon6011.main.main.calculate(valueA, valueB, valueX);</span>
+<span class="nc" id="L142">				txtFieldRes.setText(&quot;Result\nValue of a = &quot; + valueA + &quot;\nValue of b = &quot; + valueB + &quot;\nValue of x = &quot; + valueX + </span>
+<span class="nc" id="L143">						&quot;\nNumber of Expansions = &quot; + seon6011.main.main.EXPANSION + &quot;\nValue of Epsilon = &quot;</span>
+<span class="nc" id="L144">						+ seon6011.main.main.EPSILON + &quot;\n\n\n The Answer is &quot; + ans);</span>
+<span class="nc" id="L145">			} catch (Exception e1) {</span>
+				// TODO Auto-generated catch block
+<span class="nc" id="L147">				txtFieldRes.setText(&quot;Result\nValue of a = &quot; + valueA + &quot;\nValue of b = &quot; + valueB + &quot;\nValue of x = &quot; + valueX + </span>
+<span class="nc" id="L148">						&quot;\nNumber of Expansions = &quot; + seon6011.main.main.EXPANSION + &quot;\nValue of Epsilon = &quot;</span>
+<span class="nc" id="L149">						+ seon6011.main.main.EPSILON + &quot;\n\n\n Answer: There was an error in the calculation &quot; + e1.getMessage());</span>
+			}
+			
+		}
+		
+<span class="nc" id="L154">	}</span>
+	
+	public static void main(String[] args) {
+<span class="nc" id="L157">		new GUI();</span>
+<span class="nc" id="L158">	}</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span>test (Jul. 18, 2022 11:43:50 a.m.)</div></body></html>

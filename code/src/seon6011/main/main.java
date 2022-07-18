@@ -11,7 +11,7 @@ public class main {
 	 * @throws Exception arithmetic exception erro
 	 */
 	public static void main(String[] args) throws Exception {
-		System.out.println(calculate(2, E, EXPANSION));
+		System.out.println(calculate(1, 2, 5));
 	}
 		
 	/**
@@ -24,7 +24,7 @@ public class main {
 		if (value < 0) value = -value;
 		return value;
 	}
-	/*
+	/**
 	 * Calculate the value of e^value (Exponential function) using Taylor series expansion.
 		///FOR TESTING
 	 * @param value exponent number,double type
@@ -47,12 +47,15 @@ public class main {
 	 public static final double E = 2.7182818284590451;
 	
 	 /** The Constant EXPANSION. */
-	 public static final int EXPANSION = 60; // default Taylor expansion times
+	 public static int EXPANSION = 60; // default Taylor expansion times
 	 
 	 /** The Constant LN2. */
 	 public static final double LN2 = 0.6931471805599453; // value of ln(2)
 	 
-	 /*
+	 /** The Constant epsilon. */
+	 public static double EPSILON = 0.0000001; // allowable error
+		
+	 /**
 	  * Calculate the value of a*(b^value).
 	  *
 	  * @param a double type
@@ -72,8 +75,9 @@ public class main {
 	 /**
 	  * 
 	  * calculating the power of a number a^value
-	  * @param value the given base number, a
-	  * @param power the exponent, value base of the base
+	  * @param a the given base number, a
+	  * @param value the exponent, value base of the base
+	  * @return y the power result
 	  */
 	 public static double power(double a, int value) {
 		 if (value == 0) return 1.0;
@@ -139,7 +143,7 @@ public class main {
 		 return result;
 	 }
 	 
-	 /*
+	 /**
 	  * Ln base.
 	  *
 	  * @param value domain is (0,2],double type

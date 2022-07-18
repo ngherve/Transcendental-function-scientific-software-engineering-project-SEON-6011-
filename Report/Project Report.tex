@@ -151,7 +151,7 @@ The range of $y$ varies depending on various parameter as follows.
 
 \subsection{Context of use model}
 The calculator application as described by the function can accommodate two types of user namely. Scientists (human users) and external programs through Application Program Interface (API) calls on subordinate functions.\par
-The main function takes as input valid double data types for the three parameters $a$, $b$ and $x$. These values are entered by the user through the user interface and validated by the program and then passed into the main method. This method in turn calls subordinate function to obtain the relevant results. The calculator then return the final results of calculation to the user interface. This could be a value or simply a message indicating a calculation error. This process is illustrated in figure \ref{fig3} below.
+The main function takes as input valid double data types for the three parameters $a$, $b$ and $x$. These values are entered by the user through the user interface and validated by the program and then passed into the main method. This method in turn calls subordinate functions to obtain the relevant results. The calculator then return the final results of calculation to the user interface. This could be a value or simply a message indicating a calculation error. This process is illustrated in figure \ref{fig3} below.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/ContextDiagram}
@@ -190,7 +190,6 @@ At this stage, we analyse, document, track, prioritise and agree on requirement 
 
 \section{Source code review and description of test cases} \label{s:sec3}
 The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function\par
-The program is implemented using Eclipse IDE for developers (version 2021-09). The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0)
 
 \subsection{Pseudocode and description of Algorithms}
 \begin{algorithm}[H]
@@ -267,6 +266,34 @@ The program is implemented using Eclipse IDE for developers (version 2021-09). T
 		\State $result \gets a *power(b,x)$ \Comment{External call to Algorithm \ref{alg:pow}}	
 	\end{algorithmic}
 \end{algorithm}
+
+\subsection{Test cases and tool used}
+The program is implemented using Eclipse IDE for developers (version 2021-09). The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0). Java Developer Tools (JDT) such as JUnit (JUnit 5 for Eclipse Oxygen was used) to build test cases. The coverage was computed with JaCoCo library, a plug-in in Eclipse.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth]{Figures/test}
+	\caption{Test cases showed in the debugger.}
+	\label{fig4}
+\end{figure}
+\par Both the Javadoc and test case coverage was exported and stored in the source folder of the program. The graphical user interface was implemented with the \emph{javax.swing} library.
+
+\subsubsection{Advantages of Eclipse}
+\begin{itemize}
+	\item Eclipse is a free and open source IDE which supports multiple languages and is a especially suited for Java, it is one of the most popular IDEs for Java.
+	\item It supports a wide range of plug-ins, allowing users to make their own plug-in development environment (PDE).
+	\item Eclipse provides modelling support for projects including Unified Modelling Language (UML).
+\end{itemize}
+\subsubsection{Disadvantages of Eclipse}
+\begin{itemize}
+	\item Eclipse tends to be significantly slow to run compared with other IDEs such as NetBeans due to insufficient memory allocation.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Figures/gui}
+	\caption{Graphical user interface for Calculator App $y=ab^x$.}
+	\label{fig5}
+\end{figure}
 
 \section{Conclusion}\label{s:conclusion}
 In conclusion, we described, implemented and documented the scientific calculation of the function $y=ab^x$ using software engineering best practices. The program was built conceptually and tested in Java programming language, we designed a also designed a context of use that fits with the implementation.
