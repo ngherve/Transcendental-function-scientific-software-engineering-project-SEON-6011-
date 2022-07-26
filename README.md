@@ -33,7 +33,9 @@ Run the JAR file and set various values
 ## Running the tests
 
 * clone the repository on your PC
-
+* Open the Document under report in the report folder where you will find the Latex source
+* The Source code is under code (check the runnable jar for GUI)
+* find various JUnit test, javadoc and coverage under the folder
 
 ## Deployment
 
