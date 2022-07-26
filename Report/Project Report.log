@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  26 JUL 2022 11:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  26 JUL 2022 11:36
 entering extended mode
 **"./Project Report.tex"
 (Project Report.tex
@@ -878,13 +878,13 @@ put line 197.
 File: Figures/test.png Graphic file (type png)
 <use Figures/test.png>
 Package pdftex.def Info: Figures/test.png  used on input line 284.
-(pdftex.def)             Requested size: 432.26999pt x 242.15413pt.
+(pdftex.def)             Requested size: 389.04034pt x 217.92636pt.
  [10]
 <Figures/gui.png, id=189, 368.1253pt x 373.395pt>
 File: Figures/gui.png Graphic file (type png)
 <use Figures/gui.png>
 Package pdftex.def Info: Figures/gui.png  used on input line 295.
-(pdftex.def)             Requested size: 216.135pt x 219.2357pt.
+(pdftex.def)             Requested size: 237.7498pt x 241.15984pt.
  [11 <./Figures/test.png> <./Figures/gui.png>]
 (Project Report.bbl
 Underfull \hbox (badness 2828) in paragraph at lines 16--20
@@ -924,7 +924,7 @@ ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gomse/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gomse/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/gomse/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on "Project Report.pdf" (12 pages, 477097 bytes).
+Output written on "Project Report.pdf" (12 pages, 477100 bytes).
 PDF statistics:
  286 PDF objects out of 1000 (max. 8388607)
  47 named destinations out of 1000 (max. 500000)

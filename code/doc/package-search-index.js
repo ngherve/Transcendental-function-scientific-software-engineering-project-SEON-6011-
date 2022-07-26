@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"seon6011.gui"},{"l":"seon6011.main"},{"l":"seon6011.test"}];updateSearchResults();
