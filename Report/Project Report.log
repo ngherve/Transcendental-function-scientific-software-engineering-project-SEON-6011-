@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  18 JUL 2022 13:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.9.3)  26 JUL 2022 11:11
 entering extended mode
 **"./Project Report.tex"
 (Project Report.tex
@@ -872,32 +872,33 @@ Package pdftex.def Info: Figures/ContextDiagram.png  used on input line 157.
 (pdftex.def)             Requested size: 432.26999pt x 263.90982pt.
  [4 <./Figures/graph.png>] [5 <./Figures/ContextDiagram.png>] [6] [7]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 196.
+put line 197.
  [8] [9]
-<Figures/test.png, id=174, 1444.64719pt x 809.27344pt>
+<Figures/test.png, id=180, 1444.64719pt x 809.27344pt>
 File: Figures/test.png Graphic file (type png)
 <use Figures/test.png>
-Package pdftex.def Info: Figures/test.png  used on input line 274.
+Package pdftex.def Info: Figures/test.png  used on input line 284.
 (pdftex.def)             Requested size: 432.26999pt x 242.15413pt.
- [10 <./Figures/test.png>]
-<Figures/gui.png, id=184, 368.1253pt x 373.395pt>
+ [10]
+<Figures/gui.png, id=189, 368.1253pt x 373.395pt>
 File: Figures/gui.png Graphic file (type png)
 <use Figures/gui.png>
-Package pdftex.def Info: Figures/gui.png  used on input line 293.
-(pdftex.def)             Requested size: 302.58766pt x 306.94365pt.
- [11] (Project Report.bbl
+Package pdftex.def Info: Figures/gui.png  used on input line 295.
+(pdftex.def)             Requested size: 216.135pt x 219.2357pt.
+ [11 <./Figures/test.png> <./Figures/gui.png>]
+(Project Report.bbl
 Underfull \hbox (badness 2828) in paragraph at lines 16--20
 []\OT1/cmr/m/n/10.95 Google.  How to do a code re-view, Google.  https://google
 .github.io/eng-
  []
 
-[12 <./Figures/gui.png>]) [13] (Project Report.aux)
+) [12] (Project Report.aux)
 Package rerunfilecheck Info: File `"Project Report".out' has not changed.
 (rerunfilecheck)             Checksum: 9FDD13D9CDD853A266DD88C98F3E3ADD;3060.
  ) 
 Here is how much of TeX's memory you used:
- 30524 strings out of 478927
- 722282 string characters out of 2852536
+ 30523 strings out of 478927
+ 722275 string characters out of 2852536
  1136228 words of memory out of 3000000
  47832 multiletter control sequences out of 15000+600000
  420011 words of font info for 72 fonts, out of 8000000 for 9000
@@ -923,9 +924,9 @@ ype1/public/amsfonts/symbols/msbm10.pfb><C:/Users/gomse/AppData/Local/Programs/
 MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Users/gomse/AppData/Local/Progra
 ms/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Users/gomse/AppData/Local/Pr
 ograms/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on "Project Report.pdf" (13 pages, 475778 bytes).
+Output written on "Project Report.pdf" (12 pages, 477097 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 48 named destinations out of 1000 (max. 500000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 47 named destinations out of 1000 (max. 500000)
  166 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -11,6 +11,6 @@
 \contentsline {section}{\numberline {3}Source code review and description of test cases}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Pseudocode and description of Algorithms}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Test cases and tool used}{10}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Advantages of Eclipse}{11}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Advantages of Eclipse}{10}{subsubsection.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2}Disadvantages of Eclipse}{11}{subsubsection.3.2.2}%
 \contentsline {section}{\numberline {4}Conclusion}{12}{section.4}%

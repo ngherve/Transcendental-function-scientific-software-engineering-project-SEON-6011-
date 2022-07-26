@@ -192,6 +192,7 @@ At this stage, we analyse, document, track, prioritise and agree on requirement 
 The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature \cite{google2}. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function \cite{google1}.\par
 
 \subsection{Pseudocode and description of Algorithms}
+\par In order to build the function we consider various edge and special cases that are important in the evaluation of the function. Part of the function constitute a power function as described in algorithm \ref{alg:pow}. The algorithm was designed to be simple and to achieve optimal performance. It constitutes a foundation for function.
 \begin{algorithm}[H]
 	\caption{Algorithm for power($x$, $n$)}\label{alg:pow}
 	\begin{algorithmic}
@@ -211,7 +212,7 @@ The source code of the program conforms to google coding style and the variable 
 		\EndWhile
 	\end{algorithmic}
 \end{algorithm}
-
+\par The algorithms \ref{alg:ln} and \ref{alg:ex} are implemented as subordinate functions to the main calculation. The function $\ln x$ utilises the Taylor series expansion as a scratch solution to compute results as in algorithm \ref{alg:ln}. 
 \begin{algorithm}[H]
 	\caption{Algorithm for $\ln x$}\label{alg:ln}
 	\begin{algorithmic}
@@ -232,7 +233,7 @@ The source code of the program conforms to google coding style and the variable 
 		\State $result\gets result + res$
 	\end{algorithmic}
 \end{algorithm}
-
+\par The function $e^x$ uses a default value of $e=2.7182818284590451$ and the power function to constitute the evaluation as shown in algorithm \ref{alg:ex}.
 \begin{algorithm}[H]
 	\caption{Algorithm for $e^x$}\label{alg:ex}
 	\begin{algorithmic}
@@ -246,7 +247,7 @@ The source code of the program conforms to google coding style and the variable 
 		\EndFor
 	\end{algorithmic}
 \end{algorithm}
-
+\par The absolute value function is implemented as a utility function as part of the testing process to compare various test results with the allowable error, $\epsilon$. 
 \begin{algorithm}[H]
 	\caption{Algorithm for $\lvert x \rvert$}\label{alg:abs}
 	\begin{algorithmic}
@@ -269,20 +270,21 @@ The source code of the program conforms to google coding style and the variable 
 
 \subsection{Test cases and tool used}
 The program is implemented using Eclipse IDE for developers (version 2021-09) \cite{eclipse}. The program is illustrated below. The Latex code was written in TeXstudio (version 4.0.0). Java Developer Tools (JDT) such as JUnit (JUnit 5 for Eclipse Oxygen was used) to build test cases. The coverage was computed with JaCoCo library, a plug-in in Eclipse.
+
+\par Both the Javadoc and test case coverage were exported and stored into the source folder of the program. The graphical user interface was implemented with the \emph{javax.swing} library. The test cases comprise individual tests for each subordinate function using chosen values as shown in figure \ref{fig4}. 
+
+\subsubsection{Advantages of Eclipse}
+\begin{itemize}
+	\item Eclipse is a free and open source IDE which supports multiple languages and is a especially suited for Java, it is one of the most popular IDE's for Java.
+	\item It supports a wide range of plug-ins, allowing users to make their own plug-in development environment (PDE).
+	\item Eclipse provides modelling support for projects including Unified Modelling Language (UML).
+\end{itemize}
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/test}
 	\caption{Test cases showed in the debugger.}
 	\label{fig4}
 \end{figure}
-\par Both the Javadoc and test case coverage was exported and stored in the source folder of the program. The graphical user interface was implemented with the \emph{javax.swing} library.
-
-\subsubsection{Advantages of Eclipse}
-\begin{itemize}
-	\item Eclipse is a free and open source IDE which supports multiple languages and is a especially suited for Java, it is one of the most popular IDEs for Java.
-	\item It supports a wide range of plug-ins, allowing users to make their own plug-in development environment (PDE).
-	\item Eclipse provides modelling support for projects including Unified Modelling Language (UML).
-\end{itemize}
 \subsubsection{Disadvantages of Eclipse}
 \begin{itemize}
 	\item Eclipse tends to be significantly slow to run compared with other IDEs such as NetBeans due to insufficient memory allocation.
@@ -290,10 +292,11 @@ The program is implemented using Eclipse IDE for developers (version 2021-09) \c
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\linewidth]{Figures/gui}
+	\includegraphics[width=0.5\linewidth]{Figures/gui}
 	\caption{Graphical user interface for Calculator App $y=ab^x$.}
 	\label{fig5}
 \end{figure}
+
 
 \section{Conclusion}\label{s:conclusion}
 In conclusion, we described, implemented and documented the scientific calculation of the function $y=ab^x$ using software engineering best practices. The program was built conceptually and tested in Java programming language, we designed a also designed a context of use that fits with the implementation.
