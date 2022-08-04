@@ -167,13 +167,13 @@ At this stage we communicated intensively with stakeholders. In this case this w
 Here we elaborate requirements formally based on the previous stage of the process. All requirements including functional and non-functional requirements, and constraints are specifies here \cite{li2015automated}. As studied in agile methodologies, these activities are carried out incrementally and iteratively as we develop the program by revising requirements. Git and GitHub was used as the version control system throughout the development process. 
 \subsubsection{Functional requirements}
 \begin{itemize}
-	\item The program must be implemented in Java and the document written in Latex.
-	\item The mathematical expressions in must be typeset in Latex and not as images.
-	\item The artifacts must be placed in a distributed version control system.
-	\item The algorithms must handle every boundary conditions of the domain and codomain of the function. 
-	\item The main function ($y=ab^x$) and its subordinate functions ($e^x$, $a^x$, $\ln x$, $\lvert x \rvert$) must be implemented from scratch.
-	\item Unit tests (JUnits) must be created to test each corresponding subordinate functions. This is done to test that our solution corresponds to or at least nearly equates to the actual value.
-	\item A variable parameter $\epsilon$ may be provided by the user to control the allowable error in the calculations. A default value is used if $\epsilon$ is not provided.
+	\item \emph{FRQ1:} The program must be implemented in Java and the document written in Latex.
+	\item \emph{FRQ2:} The mathematical expressions in must be typeset in Latex and not as images.
+	\item \emph{FRQ3:} The artifacts must be placed in a distributed version control system.
+	\item \emph{FRQ4:} The algorithms must handle every boundary conditions of the domain and codomain of the function. 
+	\item \emph{FRQ5:} The main function ($y=ab^x$) and its subordinate functions ($e^x$, $a^x$, $\ln x$, $\lvert x \rvert$) must be implemented from scratch.
+	\item \emph{FRQ6:} Unit tests (JUnits) must be created to test each corresponding subordinate functions. This is done to test that our solution corresponds to or at least nearly equates to the actual value.
+	\item \emph{FRQ7:} A variable parameter $\epsilon$ may be provided by the user to control the allowable error in the calculations. A default value is used if $\epsilon$ is not provided.
 \end{itemize}
 \subsubsection{Non-functional requirements}
 \begin{itemize}
@@ -192,7 +192,7 @@ At this stage, we analyse, document, track, prioritise and agree on requirement 
 The source code of the program conforms to google coding style and the variable names comply to the camel case standard nomenclature \cite{google2}. The code also aligns with the standard programming style for Java. Throughout the program exception handling, error messages and other error handling mechanisms are used to make the program robust, it also contribute to enforcing the constraints of the mathematical expressions. A graphical user interface is used to capture user inputs and display the program output. Google's code review guidelines was use to review the implementation of the function \cite{google1}.\par
 
 \subsection{Pseudocode and description of Algorithms}
-\par In order to build the function we consider various edge and special cases that are important in the evaluation of the function. Part of the function constitute a power function as described in algorithm \ref{alg:pow}. The algorithm was designed to be simple and to achieve optimal performance. It constitutes a foundation for function.
+\par In order to build the function we consider various edge and special cases that are important in the evaluation of the function. Part of the function constitute a power function as described in algorithm \ref{alg:pow}. The algorithm was designed to be simple and to achieve optimal performance. It constitutes a foundation for function. The Mind--map used in choosing the pseudo-code style is based on the fact that the task is mainly to evaluate mathematical expressions. Hence, an algorithm style best fits the task as it is more closely related to mathematical demonstrations.
 \begin{algorithm}[H]
 	\caption{Algorithm for power($x$, $n$)}\label{alg:pow}
 	\begin{algorithmic}
